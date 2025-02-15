@@ -17,8 +17,10 @@ body::before{
     content: '';
     position: absolute;
     width: 100%;
-    height: 100%;
-    background: url(.assets/Imagen/img.jpg);
+    min-height: 100vh;
+    /*background: url(.assets/Imagen/img.jpg);*/
+  background: #000000af ;
+  background-attachment: fixed;
     background-position: center;
     background-size: cover;
 }
@@ -55,7 +57,7 @@ h2{
     pointer-events: none;
     transition: 0.15s ease;
 }
-.input-field input {
+.input-field input{
     width: 100%;
     height: 100%;
     background: transparent;
@@ -71,6 +73,7 @@ h2{
     top: 10px;
     transform: translateY(-120%);
 }
+/* check box and forget password*/
 .forget{
     display: flex;
     align-items: center;
@@ -78,6 +81,7 @@ h2{
     margin: 25px 0 35px 0;
     color: #fff
 }
+/* check box*/
 #remenber{
     accent-color: #fff;
 }
